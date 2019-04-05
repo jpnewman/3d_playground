@@ -15,15 +15,15 @@
             "environment": [
                 {
                     "name":  "DYLD_LIBRARY_PATH",
-                    "value": "/Users/Shared/vulkansdk/macOS/lib"
+                    "value": "/usr/local/share/vulkansdk/macOS/lib"
                 },
                 {
                     "name":  "VK_ICD_FILENAMES",
-                    "value": "/Users/Shared/vulkansdk/macOS/etc/vulkan/icd.d/MoltenVK_icd.json"
+                    "value": "/usr/local/share/vulkansdk/macOS/etc/vulkan/icd.d/MoltenVK_icd.json"
                 },
                 {
                     "name":  "VK_LAYER_PATH",
-                    "value": "/Users/Shared/vulkansdk/macOS/etc/vulkan/explicit_layer.d"
+                    "value": "/usr/local/share/vulkansdk/macOS/etc/vulkan/explicit_layer.d"
                 }
             ],
             "externalConsole": false,

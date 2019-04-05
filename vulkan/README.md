@@ -48,15 +48,15 @@ CodeSign gdb, other references: -
 ## Install Vulkan SDK
 
 1. Download from <https://vulkan.lunarg.com/sdk/home#mac>
-2. Extract to ```/Users/Shared```.  
-   *e.g.* ```/Users/Shared/vulkansdk-macos-1.1.101.0```
+2. Extract to ```/usr/local/share```.  
+   *e.g.* ```/usr/local/share/vulkansdk-macos-1.1.101.0```
 3. Link Vulkan SDK: -
 
     ```bash
-    ln -sn /Users/Shared/vulkansdk-macos-1.1.101.0 /Users/Shared/vulkansdk
+    ln -sn /usr/local/share/vulkansdk-macos-1.1.101.0 /usr/local/share/vulkansdk
     ```
 
-> If extracted path changes and not linked to ```/Users/Shared/vulkansdk``` also update paths in VSCode ```launch.json``` file.
+> If extracted path changes and not linked to ```/usr/local/share/vulkansdk``` also update paths in VSCode ```launch.json``` file.
 
 ## Setup
 
@@ -64,7 +64,7 @@ Add the following to file ```~/.zshrc``` and source it: -
 
 ```bash
 # Vulkan
-export VULKAN_ROOT_LOCATON="/Users/Shared"
+export VULKAN_ROOT_LOCATON="/usr/local/share"
 export VULKAN_SDK_VERSION="1.1.101.0"
 export VULKAN_SDK="$VULKAN_ROOT_LOCATON/vulkansdk-macos-$VULKAN_SDK_VERSION/macOS"
 export DYLD_LIBRARY_PATH="$VULKAN_SDK/lib"
@@ -73,11 +73,11 @@ export VK_LAYER_PATH="$VULKAN_SDK/etc/vulkan/explicit_layer.d"
 export PATH="/usr/local/opt/python/libexec/bin:$VULKAN_SDK/bin:$PATH"
 ```
 
-> If Vulkan SDK was linked to ```/Users/Shared/vulkansdk``` the following can be added instead: -
+> If Vulkan SDK was linked to ```/usr/local/share/vulkansdk``` the following can be added instead: -
 
 ```bash
 # Vulkan
-export VULKAN_SDK="/Users/Shared/vulkansdk/macOS"
+export VULKAN_SDK="/usr/local/share/vulkansdk/macOS"
 export DYLD_LIBRARY_PATH="$VULKAN_SDK/lib"
 export VK_ICD_FILENAMES="$VULKAN_SDK/etc/vulkan/icd.d/MoltenVK_icd.json"
 export VK_LAYER_PATH="$VULKAN_SDK/etc/vulkan/explicit_layer.d"
