@@ -61,5 +61,5 @@ make
 ## Run
 
 ```bash
- ./HelloWorld
+./Multisampling
 ```

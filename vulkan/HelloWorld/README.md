@@ -26,5 +26,5 @@ make
 ## Run
 
 ```bash
- ./HelloWorld
+./HelloWorld
 ```
