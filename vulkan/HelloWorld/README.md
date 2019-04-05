@@ -13,13 +13,13 @@ Open VSCode in this folder: -
 code .
 ```
 
-## Build
+## Build Release
 
 ```bash
-mkdir -p build
-cd build
+mkdir -p Release
+cd Release
 
-cmake ..
+cmake -DCMAKE_BUILD_TYPE=Release ..
 make
 ```
 
