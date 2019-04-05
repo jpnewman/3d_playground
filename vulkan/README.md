@@ -20,11 +20,13 @@ Install Xcode and run the following command: -
 xcode-select --install
 ```
 
-## Install CMake and GLFW
+## Install CMake, GLFW, and GLM
 
 ```bash
 brew install cmake
 brew install glfw --HEAD
+
+brew install glm
 ```
 
 ## Install gdb
