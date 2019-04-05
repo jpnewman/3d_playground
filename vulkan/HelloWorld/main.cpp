@@ -1,4 +1,4 @@
-// Based On: https://vulkan-tutorial.com/code/15_hello_triangle.cpp
+// Based On: https://github.com/Overv/VulkanTutorial/blob/master/code/15_hello_triangle.cpp
 
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
